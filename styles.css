@@ -1,0 +1,90 @@
+/* Add this to your existing CSS */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000099;
+    color: #ffffff;
+    padding: 20px 20px;
+    z-index: 1000;
+    font-size: 2rem; /* Responsive font size */
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+body {
+	text-align: left;
+}
+
+img {
+    width: auto; /* Full width of the container */
+    height: auto; /* Let the height adjust automatically */
+    max-height: 300px; /* Set a maximum height for larger screens */
+    object-fit: cover; /* Maintain aspect ratio while filling */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+	
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    padding: 90px 10px 10px; /* Adjust padding for fixed header */
+	background-color: #cce6ff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    img {
+        max-height: 200px; /* Reduce max height for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        max-height: 150px; /* Further reduce max height for small screens */
+    }
+    
+    header {
+        font-size: 1.5rem; /* Smaller header font size for small screens */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Smaller footer font size */
+    }
+}
+
+	.link {
+    color: #000099; /* Link color */
+    text-decoration: none;
+}
+
+	.link:hover {
+    color: #ffffff; /* Change color on hover */
+	
+}
+.info{
+	margin-top: -8px;          /* Space between header and text */
+	color: white;         
+    text-shadow: 
+        -1px -1px 0 black,  /* Top-left */
+        2px -1px 0 black,   /* Top-right */
+        -1px 1px 0 black,   /* Bottom-left */
+        1px 1px 0 black;    /* Bottom-right */
+    text-align: left;
+	position: fixed;
+	z-index: 1000;
+}
+
+footer {
+    width: auto;
+    margin: auto;               /* Remove default margin */
+    background-color: #000099;
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid #000000;
+    
+	color: #ffffff;
+    
+}
+
